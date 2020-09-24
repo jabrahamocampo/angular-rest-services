@@ -1,0 +1,15 @@
+<div>
+  <h2>Customer Edit</h2>
+  <div>
+    <label>Customer Name:
+      <input [(ngModel)]="customerData.name" placeholder="Name"/>
+    </label><br>
+    <label>Customer Desc:
+      <input [(ngModel)]="customerData.email" placeholder="Email"/>
+    </label><br>
+    <label>Customer Price:
+      <input [(ngModel)]="customerData.address" placeholder="Address"/>
+    </label><br>
+  </div>
+  <button (click)="updateCustomer()">Update</button>
+</div>

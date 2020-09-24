@@ -1,0 +1,11 @@
+<div *ngIf="customer" class="products">
+  <h2>{{customer.name | uppercase}} Details</h2>
+  <div><span>Name: </span>{{customer.name}}</div>
+  <div><span>Email: </span>{{customer.email}}</div>
+  <div><span>Address: </span>{{customer.address}}</div>
+  <div>
+    <button routerLink="/editcustomer/{{customer.id}}">
+      Edit
+    </button>
+  </div>
+</div>
